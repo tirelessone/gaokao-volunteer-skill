@@ -1,0 +1,21 @@
+# Runtime: Python 3.11
+
+Flask==3.1.3
+openai==3.3.0
+openai-agents[sqlalchemy]==0.21.1
+SQLAlchemy==2.0.51
+aiomysql==0.3.2
+
+requests==2.34.2
+python-dotenv==1.2.2
+PyYAML==6.0.3
+pydantic==2.13.4
+
+# The project imports mcp.server.fastmcp, which was removed in MCP 2.x.
+mcp==1.29.0
+
+# Milvus Lite local-file mode is not available on native Windows.
+pymilvus==3.0.1; platform_system == "Windows"
+pymilvus[milvus_lite]==3.0.1; platform_system != "Windows"
+sentence-transformers==5.6.0
+jieba==0.42.1
