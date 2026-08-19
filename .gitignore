@@ -1,0 +1,38 @@
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Test, coverage, and type-checker caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Runtime outputs
+*.log
+*.tmp
+*.sqlite
+*.sqlite3
+runtime_data/*
+!runtime_data/.gitignore
+
+# Local RAG vector database (too large for normal Git history)
+RAG/*.db
+
